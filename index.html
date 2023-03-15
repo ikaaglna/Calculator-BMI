@@ -10,6 +10,32 @@
     <style>
         button {
             width: 100%;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+        .red {
+            background-color: red;
+            color: white;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .blue {
+            background-color: blue;
+            color: white;
+        }
+
+        .green {
+            background-color: green;
+            color: white;
+        }
+
+        .black {
+            background-color: black;
+            color: white;
         }
     </style>
 </head>
@@ -18,42 +44,42 @@
     <table>
         <tr>
             <th colspan="4">
-                <input type="text" name="display">
+                <input type="text" name="display" style="border-radius: 5px; font-size: 20px; padding: 5px;">
             </th>
         </tr>
 
         <tr>
-            <td colspan="2"><button>AC</button></td>
-            <td><button>C</button></td>
-            <td><button>*</button></td>
+            <td colspan="2"><button class="red">AC</button></td>
+            <td><button>C</button class="blue"></td>
+            <td><button class="yellow">*</button></td>
         </tr>
 
         <tr>
             <td><button>7</button></td>
             <td><button>8</button></td>
             <td><button>9</button></td>
-            <td><button>/</button></td>
+            <td><button class="yellow">/</button></td>
         </tr>
 
         <tr>
             <td><button>4</button></td>
             <td><button>5</button></td>
             <td><button>6</button></td>
-            <td><button>+</button></td>
+            <td><button class="yellow">+</button></td>
         </tr>
 
         <tr>
             <td><button>1</button></td>
             <td><button>2</button></td>
             <td><button>3</button></td>
-            <td><button>-</button></td>
+            <td><button class="yellow">-</button></td>
         </tr>
 
         <tr>
-            <td><button>+-</button></td>
+            <td><button class="black">+-</button></td>
             <td><button>0</button></td>
-            <td><button>.</button></td>
-            <td><button>=</button></td>
+            <td><button class="black">.</button></td>
+            <td><button class="green">=</button></td>
         </tr>
     </table>
 </body>
