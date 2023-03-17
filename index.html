@@ -5,83 +5,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <style>
-        button {
-            width: 100%;
-            border-radius: 5px;
-            padding: 5px 10px;
-        }
-
-        .red {
-            background-color: red;
-            color: white;
-        }
-
-        .yellow {
-            background-color: yellow;
-        }
-
-        .blue {
-            background-color: blue;
-            color: white;
-        }
-
-        .green {
-            background-color: green;
-            color: white;
-        }
-
-        .black {
-            background-color: black;
-            color: white;
-        }
-    </style>
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <table>
-        <tr>
-            <th colspan="4">
-                <input type="text" name="display" style="border-radius: 5px; font-size: 20px; padding: 5px;">
-            </th>
-        </tr>
 
-        <tr>
-            <td colspan="2"><button class="red">AC</button></td>
-            <td><button>C</button class="blue"></td>
-            <td><button class="yellow">*</button></td>
-        </tr>
+    <div class="container">
+        <h1>Kalkulator BMI</h1>
+        <div class="text">
+            Berat badan ideal adalah impian semua orang. Tidak hanya ingin memiliki bentuk tubuh yang menunjang
+            penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu ?
+            <br>Yuk hitung sekarang di Kalkulator BMI
+        </div>
 
-        <tr>
-            <td><button>7</button></td>
-            <td><button>8</button></td>
-            <td><button>9</button></td>
-            <td><button class="yellow">/</button></td>
-        </tr>
 
-        <tr>
-            <td><button>4</button></td>
-            <td><button>5</button></td>
-            <td><button>6</button></td>
-            <td><button class="yellow">+</button></td>
-        </tr>
+        <div class="card">
+            <form method="" action="">
+                <div class="title">Jenis Kelamin</div>
+                <label name="Jenis Kelamin"> <input type="radio" id="Pria" name="JenisKelamin" value="Pria"></label>
+                <label for="Pria">Pria</label>
 
-        <tr>
-            <td><button>1</button></td>
-            <td><button>2</button></td>
-            <td><button>3</button></td>
-            <td><button class="yellow">-</button></td>
-        </tr>
+                <label name="Jenis Kelamin"> <input type="radio" id="Wanita" name="JenisKelamin" value="Wanita"></label>
+                <label for="Wanita">Wanita</label>
 
-        <tr>
-            <td><button class="black">+-</button></td>
-            <td><button>0</button></td>
-            <td><button class="black">.</button></td>
-            <td><button class="green">=</button></td>
-        </tr>
-    </table>
+
+
+                <div class="title">Berat Badan (kg)</div>
+                <span class="ikon">
+                    <?xml version="1.0" ?><svg height="20" viewBox="0 0 48 48" width="20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 34.5v7.5h7.5l22.13-22.13-7.5-7.5-22.13 22.13zm35.41-20.41c.78-.78.78-2.05 0-2.83l-4.67-4.67c-.78-.78-2.05-.78-2.83 0l-3.66 3.66 7.5 7.5 3.66-3.66z" />
+                        <path d="M0 0h48v48h-48z" fill="none" />
+                    </svg>
+                </span><input class="form" type="text" name="beratBadan">
+
+                <div class="title">Usia (tahun)</div>
+                <span class="ikon">
+                    <?xml version="1.0" ?><svg height="20" viewBox="0 0 48 48" width="20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 34.5v7.5h7.5l22.13-22.13-7.5-7.5-22.13 22.13zm35.41-20.41c.78-.78.78-2.05 0-2.83l-4.67-4.67c-.78-.78-2.05-.78-2.83 0l-3.66 3.66 7.5 7.5 3.66-3.66z" />
+                        <path d="M0 0h48v48h-48z" fill="none" />
+                    </svg>
+                </span>
+                <input class="form" type="text" name="usia">
+
+                <div class="title">Tinggi Badan (cm)</div>
+                <span class="ikon">
+                    <?xml version="1.0" ?><svg height="20" viewBox="0 0 48 48" width="20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 34.5v7.5h7.5l22.13-22.13-7.5-7.5-22.13 22.13zm35.41-20.41c.78-.78.78-2.05 0-2.83l-4.67-4.67c-.78-.78-2.05-.78-2.83 0l-3.66 3.66 7.5 7.5 3.66-3.66z" />
+                        <path d="M0 0h48v48h-48z" fill="none" />
+                    </svg>
+                </span>
+                <input class="form" type="text" name="tinggiBadan">
+
+                <div class="tombol">
+                    <button type="submit" class="btn-kirim">Hitung BMI</button>
+                    <button class="btn-reset">Reset</button>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="text">
+            Keunggulan fitur
+            <ol>
+                <li>Menghitung berat badan</li>
+                <li>Menentukan kategori berat badan ideal atau tidak</li>
+                <li>Mempersiapkan program penurunan berat badan</li>
+            </ol>
+            Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan
+            pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi
+            dengan orang yang memenuhi syarat seperti dokter.
+        </div>
+
+        <div class="text">
+            Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa
+            Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda
+            (dalam meter) atau BMI = Kg/M².
+        </div>
+    </div>
+
 </body>
 
 </html>
