@@ -81,11 +81,28 @@ button {
   margin: 20px 0px;
 }
 
-li {
+#deskripsi2 li {
   list-style: none;
   margin-bottom: 10px;
 }
 
 .kategori {
   margin-top: 30px;
+}
+
+#deskripsi1 {
+  margin-bottom: 30px;
+}
+
+.gambarKonten {
+  display: flex;
+  padding-left: 300px;
+  padding-bottom: 50px;
+}
+
+.gambar {
+  width: 25%;
+  height: 25%;
+  border-radius: 15px;
+  padding: 0px 8px;
 }

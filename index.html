@@ -22,15 +22,13 @@
 
 
         <div class="card">
-            <!-- <form method="" action=""> -->
+            <!-- <form id="form" action="index.html" method=""> -->
             <div class="title">Jenis Kelamin</div>
             <label name="Jenis Kelamin"> <input type="radio" id="Pria" name="JenisKelamin" value="Pria"></label>
             <label for="Pria">Pria</label>
 
             <label name="Jenis Kelamin"> <input type="radio" id="Wanita" name="JenisKelamin" value="Wanita"></label>
             <label for="Wanita">Wanita</label>
-
-
 
             <div class="title">Berat Badan (kg)</div>
             <span class="ikon">
@@ -40,7 +38,7 @@
                         d="M6 34.5v7.5h7.5l22.13-22.13-7.5-7.5-22.13 22.13zm35.41-20.41c.78-.78.78-2.05 0-2.83l-4.67-4.67c-.78-.78-2.05-.78-2.83 0l-3.66 3.66 7.5 7.5 3.66-3.66z" />
                     <path d="M0 0h48v48h-48z" fill="none" />
                 </svg>
-            </span><input class="form" type="text" name="beratBadan" id="beratBadan">
+            </span><input class="form" type="number" name="beratBadan" id="beratBadan">
 
             <div class="title">Usia (tahun)</div>
             <span class="ikon">
@@ -51,7 +49,7 @@
                     <path d="M0 0h48v48h-48z" fill="none" />
                 </svg>
             </span>
-            <input class="form" type="text" name="usia" id="usia">
+            <input class="form" type="number" name="usia" id="usia">
 
             <div class="title">Tinggi Badan (cm)</div>
             <span class="ikon">
@@ -62,19 +60,17 @@
                     <path d="M0 0h48v48h-48z" fill="none" />
                 </svg>
             </span>
-            <input class="form" type="text" name="tinggiBadan" id="tinggiBadan">
+            <input class="form" type="number" name="tinggiBadan" id="tinggiBadan">
 
             <div class="">
-                <!-- <input type="button" class="btn-kirim" id="hitung" name="hitung" value="Hitung BMI"
-                        class="btn-kirim" onclick="hitungBMI();" /> -->
-                <button class="btn-kirim" id="hitungBMI" onclick="hitungBMI()">Hitung BMI</button>
-                <button class="btn-reset">Reset</button>
+                <button class="btn-kirim" onclick="hitungBMI()">Hitung BMI</button>
+                <button class="btn-reset" onclick="formReset()">Reset</button>
             </div>
             <!-- </form> -->
 
         </div>
 
-        <!-- <div class="text">
+        <div class="text">
             Keunggulan fitur
             <ol>
                 <li>Menghitung berat badan</li>
@@ -90,55 +86,51 @@
             Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa
             Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda
             (dalam meter) atau BMI = Kg/M².
-        </div> -->
+        </div>
 
         <h1>Hasil</h1>
         <div class="card text-center">
-            <p class="title-status">Berat Badan</p>
+            <p class="title-status">Berat Badan <span id="statusBeratBadan"></span></p>
             <h1 class="hasil" id="hasil" name="hasil">0</h1>
-            <p class="deskripsi-status">Anda memiliki berat badan</p>
+            <p class="deskripsi-status">Anda memiliki berat badan <span id="statusBeratBadan1"></span></p>
             <button type="" class="btn-kirim">Download Hasil BMI</button>
         </div>
 
         <div class="text-hasil">
             <div class="kategori">
-                Hasil BMI diantara
+                Hasil BMI <span id="antara"></span>
             </div>
-            <!-- Anda berada dalam kategori overweight atau berat badan berlebih. Cara terbaik untuk menurunkan berat badan
-            adalah dengan
-            mengatur kalor makanan yang dikonsumsi dan berolahraga.
-            Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas
-            normal. -->
+
+            <div id="deskripsi"></div>
             <div class="tombol">
                 <button type="" class="btn-kirim">Konsultasi Ahli Gizi Via Aplikasi</button>
                 <button type="" class="btn-kirim">Registrasi Online Ahli Gizi</button>
             </div>
 
+            <div id="deskripsi1">
+                BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang.
+                <br>
+                Anda perlu
+                konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.
+            </div>
 
-            BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda
-            perlu
-            konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda. <br><br>
         </div>
 
         <div class="card text-center">
-            <p>
-                Beberapa penyakit yang berasal dari kegemukan
-            <ul>
-                <li>Diabetes</li>
-                <li>Hipertensi</li>
-                <li>Sakit Jantung</li>
-                <li>Osteoarthritis</li>
-            </ul>
-            </p>
+            <p id="deskripsi2"></p>
 
             <button type="" class="btn-kirim">Konsultasi Ahli Gizi Via Aplikasi</button>
             <button type="" class="btn-kirim">Registrasi Online Ahli Gizi</button>
         </div>
 
-        <p>Download Aplikasi</p>
+        <h4 class="text-center">Download Aplikasi</h4>
+        <div class="gambarKonten">
+            <img class="gambar" src="gplay.jpg">
+            <img class="gambar" src="appstore.png">
+        </div>
     </div>
 
-    <script src="index.js"></script>
+    <script src=" index.js"></script>
 </body>
 
 </html>
