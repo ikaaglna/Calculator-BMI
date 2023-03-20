@@ -1,8 +1,13 @@
 function formReset() {
-    //document.getElementById("form").reset();
-    document.getElementById("beratBadan").innerHTML = "";
-    document.getElementById("usia").innerHTML = "";
-    document.getElementById("tinggiBadan").innerHTML = "";
+    document.getElementById("beratBadan").value = "";
+    document.getElementById("usia").value = "";
+    document.getElementById("tinggiBadan").value = "";
+    document.getElementById("hasil").innerHTML = 0;
+    document.getElementById("statusBeratBadan").innerHTML = "";
+    document.getElementById("statusBeratBadan1").innerHTML = "";
+    document.getElementById("antara").innerHTML = "";
+    document.getElementById("deskripsi").innerHTML = "";
+    document.getElementById("deskripsi2").innerHTML = "";
 }
 function hitungBMI() {
 
